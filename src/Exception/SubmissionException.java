@@ -81,6 +81,7 @@ public class SubmissionException {
                     System.out.print("Tambah data ? (y/n) : "); jawaban = input.next();
                     if(jawaban.equalsIgnoreCase("n")) {
                         menghitungRataRataIPK();
+                        delayedText();
                         System.exit(0);
                     } else {
                         System.out.println("Maaf, input yang Anda masukkan salah!");
@@ -104,5 +105,14 @@ public class SubmissionException {
         System.out.println("Aplikasi Penghitung Nilai IPK Mahasiswa\n");
         masukkanJumlahTotalSKS();
         masukkanNilai();
+    }
+
+    public static void delayedText() {
+        try {
+		    Thread.sleep(10000);
+	}
+        catch (InterruptedException e) { 
+			// do nothing 
+	}
     }
 }
