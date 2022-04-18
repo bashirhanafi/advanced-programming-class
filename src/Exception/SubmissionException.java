@@ -83,15 +83,12 @@ public class SubmissionException {
                         menghitungRataRataIPK();
                         delayedText();
                         System.exit(0);
-                    } else {
-                        System.out.println("Maaf, input yang Anda masukkan salah!");
-                        System.exit(0);
-                    } 
+                    }
                 }
             }
         catch(InputMismatchException e) {
             System.out.println("Input harus menggunakan angka!");
-                        System.out.println("Unfortunately, application has stopped.");
+            System.out.println("Unfortunately, application has stopped.");
             System.exit(0);
         }
     }
