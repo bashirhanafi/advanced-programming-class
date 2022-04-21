@@ -12,6 +12,13 @@ class Mahasiswa {
         this.nama = nama;
     }
 
+    // menggunakan polymorphism maka method ini (super class) tidak akan dieksekusi
+    // method di subclass yang akan dieksekusi karena overriding
+
+    void masukkanNilai() {}                 // ini hanya dummy method
+    void masukkanJumlahTotalSKS() {}        // untuk percobaan mengaplikasikan overriding
+    void menghitungRataRataIPK() {}
+
     // method pendukung
     void delayedText() {
         try {
